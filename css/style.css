@@ -1,0 +1,42 @@
+@import "utilities.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--dark);
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar.left-section-container {
+  min-width: 400px;
+  height: 100vh;
+  background: var(--dark-primary);
+  margin: 4px 0 4px 4px;
+  border-radius: 8px;
+}
+
+.main.right-section-container {
+  width: 100%;
+  min-width: 300px;
+  height: 100vh;
+  background: var(--dark-primary);
+  margin: 4px;
+  border-radius: 8px;
+}
+
+.resizer {
+  width: 8px;
+  height: 100vh;
+  cursor: col-resize;
+}
+
+.resizer:hover {
+  border-left: 1px solid var(--gray-primary);
+}
