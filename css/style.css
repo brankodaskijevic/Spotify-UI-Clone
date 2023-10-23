@@ -7,25 +7,74 @@
 }
 
 body {
+  font-family: "Poppins", sans-serif;
   background: var(--dark);
+  font-size: 16px;
+  overflow-y: hidden;
 }
 
 .container {
   display: flex;
 }
 
+/* sidebar */
+
 .sidebar.left-section-container {
-  min-width: 400px;
-  height: 100vh;
-  background: var(--dark-primary);
+  min-width: 425px;
+  height: 93vh;
+  background: white;
   margin: 4px 0 4px 4px;
   border-radius: 8px;
 }
 
+.sidebar .top-menu {
+  width: 100%;
+  background: var(--dark-primary);
+  border-radius: 8px;
+  color: var(--gray-primary);
+}
+
+.sidebar .top-menu .home.active {
+  color: #fff;
+}
+
+.sidebar .top-menu .home,
+.sidebar .top-menu .search {
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  padding: 22px 0 22px 22px;
+  cursor: pointer;
+}
+
+.sidebar .top-menu .search {
+  padding-top: 6px;
+}
+
+.sidebar .top-menu .home:hover,
+.sidebar .top-menu .search:hover {
+  color: #fff;
+}
+
+.sidebar .top-menu .home i,
+.sidebar .top-menu .search i {
+  font-size: 1.5rem;
+}
+
+
+.sidebar .top-menu .home p,
+.sidebar .top-menu .search p {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 0 20px;
+}
+
+/* main content */
+
 .main.right-section-container {
   width: 100%;
   min-width: 300px;
-  height: 100vh;
+  height: 93vh;
   background: var(--dark-primary);
   margin: 4px;
   border-radius: 8px;
@@ -35,7 +84,7 @@ body {
 
 .resizer {
   width: 8px;
-  height: 100vh;
+  height: 93vh;
   cursor: col-resize;
   margin: 4px 0;
   flex-basis: 8px;
@@ -43,4 +92,12 @@ body {
 
 .resizer:hover {
   border-left: 1px solid var(--gray-primary);
+}
+
+/* player */
+
+.player {
+  width: 100%;
+  height: 7vh;
+  background: var(--dark);
 }
