@@ -15,16 +15,19 @@ body {
 
 .container {
   display: flex;
+  height: 93vh;
 }
 
 /* sidebar */
 
 .sidebar.left-section-container {
   min-width: 425px;
-  height: 93vh;
-  background: white;
+  height: 100%;
+  background: none;
   margin: 4px 0 4px 4px;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar .top-menu {
@@ -32,6 +35,7 @@ body {
   background: var(--dark-primary);
   border-radius: 8px;
   color: var(--gray-primary);
+  margin-bottom: 8px;
 }
 
 .sidebar .top-menu .home.active {
@@ -69,12 +73,20 @@ body {
   margin: 0 0 0 20px;
 }
 
+.sidebar .library {
+  width: 100%;
+  height: 100%;
+  background: var(--dark-primary);
+  border-radius: 8px;
+  color: var(--gray-primary);
+}
+
 /* main content */
 
 .main.right-section-container {
   width: 100%;
   min-width: 300px;
-  height: 93vh;
+  height: 100%;
   background: var(--dark-primary);
   margin: 4px;
   border-radius: 8px;
@@ -84,10 +96,10 @@ body {
 
 .resizer {
   width: 8px;
-  height: 93vh;
+  height: 100%;
   cursor: col-resize;
   margin: 4px 0;
-  flex-basis: 8px;
+  flex-basis: 4px;
 }
 
 .resizer:hover {
@@ -100,4 +112,5 @@ body {
   width: 100%;
   height: 7vh;
   background: var(--dark);
+  margin-top: 4px;
 }
