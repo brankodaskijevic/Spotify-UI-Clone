@@ -29,6 +29,8 @@ body {
   background: var(--dark-primary);
   margin: 4px;
   border-radius: 8px;
+  flex-basis: 0;
+  flex-grow: 1;
 }
 
 .resizer {
@@ -36,6 +38,7 @@ body {
   height: 100vh;
   cursor: col-resize;
   margin: 4px 0;
+  flex-basis: 8px;
 }
 
 .resizer:hover {
