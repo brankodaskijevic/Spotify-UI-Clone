@@ -129,6 +129,26 @@ body {
   transition: 0.5s;
 }
 
+.sidebar .library-categories {
+  display: flex;
+  overflow: auto;
+}
+
+.sidebar .library-categories::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar .library-categories div {
+  font-size: 0.8rem;
+  color: #d1d1d1;
+  background: var(--badge-background);
+  padding: 10px;
+  margin: 10px 5px;
+  border-radius: 20px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
 /* main content */
 
 .main.right-section-container {
