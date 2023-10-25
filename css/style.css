@@ -81,6 +81,54 @@ body {
   color: var(--gray-primary);
 }
 
+.sidebar .library-filter {
+  width: 100%;
+  background: none;
+}
+
+.sidebar .add-expand-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  font-weight: 600;
+  align-items: center;
+  margin: 8px 8px 8px 8px;
+}
+
+.sidebar .add-expand-row > div {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .add-expand-row .left:hover {
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.sidebar .add-expand-row .left i {
+  padding: 10px;
+  background: none;
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+.sidebar .add-expand-row button {
+  background: none;
+  color: var(--gray-primary);
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.sidebar .add-expand-row button:hover {
+  color: white;
+  background: rgba(167, 167, 167, 0.1);
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
 /* main content */
 
 .main.right-section-container {
