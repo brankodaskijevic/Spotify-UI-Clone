@@ -252,6 +252,39 @@ body {
   flex-grow: 1;
 }
 
+.main .header-container {
+  width: 100%;
+  background-image: linear-gradient(var(--badge-background), var(--dark-primary));
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  padding: 12px 22px;
+}
+
+.main .header-container .top-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .header-container .top-menu .left-top-menu,
+.main .header-container .top-menu .right-top-menu {
+  display: flex;
+}
+
+.main .header-container .top-menu .top-menu-icon i {
+  font-size: 1.2rem;
+  color: var(--gray-primary);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.main .header-container .top-menu .top-menu-icon:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* resizer */
+
 .resizer {
   width: 8px;
   height: 100%;
