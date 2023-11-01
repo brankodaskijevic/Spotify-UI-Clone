@@ -279,6 +279,10 @@ body {
   cursor: pointer;
 }
 
+.main .header-container .top-menu .top-menu-icon i:hover {
+  scale: 1.1;
+}
+
 .main .header-container .top-menu .top-menu-icon:not(:last-child) {
   margin-right: 8px;
 }
