@@ -280,6 +280,7 @@ body {
 }
 
 .main .header-container .top-menu .top-menu-icon i:hover {
+  color: #fff;
   scale: 1.1;
 }
 
