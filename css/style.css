@@ -11,6 +11,7 @@ body {
   background: var(--dark);
   font-size: 16px;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .container {
@@ -377,6 +378,19 @@ body {
 
 .main .container-item-button button i {
   font-size: 1.4rem;
+}
+
+.main .playlists-container {
+  width: 100%;
+  height: 100%;
+  background: none;
+  padding: 0 22px;
+}
+
+.playlist-category .title h2 {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 550;
 }
 
 /* resizer */
