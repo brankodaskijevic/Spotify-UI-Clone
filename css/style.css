@@ -387,10 +387,67 @@ body {
   padding: 0 22px;
 }
 
+.playlist-category {
+  margin: 22px 0;
+}
+
 .playlist-category .title h2 {
   color: #fff;
   font-size: 1.4rem;
   font-weight: 550;
+  margin-bottom: 18px;
+}
+
+.playlist-category .playlist-items {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(192px, 1fr));
+  grid-template-rows: auto;
+  grid-auto-rows: 0;
+  column-gap: 12px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.playlist-items .playlist-item-card {
+  width: 192px;
+  background: var(--playlist-item-card-bg);
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.playlist-item-card .card-cover {
+  width: 160px;
+  height: 160px;
+}
+
+.playlist-item-card .card-cover img {
+  width: 160px;
+  height: 160px;
+  border-radius: 8px;
+}
+
+.playlist-item-card .card-title h4 {
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.playlist-item-card .card-description p {
+  color: var(--gray-primary);
+  font-size: 0.85rem;
+  margin-top: 8px;
+  overflow: hidden;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 /* resizer */
