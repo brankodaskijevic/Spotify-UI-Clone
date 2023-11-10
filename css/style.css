@@ -471,22 +471,67 @@ body {
   height: 7vh;
   background: var(--dark);
   margin-top: 4px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px;
 }
 
-/* media queries */
-/* @media (max-width: 500px) {
-  .main .container-items {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+.player .player-left-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
-  .main .container-item {
-    width: 50%;
-    text-align: center;
-    background: var(--main-header-continer-cards);
-    margin: 6px 0;
-    border-radius: 4px;
-  }
-} */
+.player .player-left-section .current-play-cover {
+  width: 55px;
+  height: 55px;
+  margin-right: 18px;
+}
+
+.player .player-left-section .current-play-cover img {
+  width: 55px;
+  height: 55px;
+  border-radius: 8px;
+}
+
+.player .player-left-section .current-play-info {
+  margin-right: 18px;
+}
+
+.player .player-left-section .current-play-info p:first-child {
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+.player .player-left-section .current-play-info p:last-child {
+  color: #fff;
+  font-size: 0.7rem;
+  color: var(--gray-primary);
+}
+
+.player .like-button-container button {
+  background: none;
+  border: none;
+}
+
+.player .like-button-container button i {
+  background-color: var(--gray-primary);
+  font-size: 1rem;
+  border-radius: 20px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.player .like-button-container button i:hover {
+  background-color: var(--green-primary);
+}
+
+.player .player-middle-section {
+
+}
+
+.player .player-right-section {
+
+}
