@@ -544,6 +544,26 @@ body {
 
 }
 
+.player .player-middle-section .upper-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.player .player-middle-section .upper-menu i {
+  color: var(--gray-primary);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.player .player-middle-section .upper-menu i:first-child {
+  color: var(--green-primary);
+}
+
+.player .player-middle-section .upper-menu i:hover {
+  color: #fff;
+}
+
 .player .player-right-section {
 
 }
