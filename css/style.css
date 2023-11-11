@@ -430,6 +430,17 @@ body {
   border-radius: 8px;
 }
 
+.playlist-item-card .card-cover .artist {
+  width: 160px;
+  height: 160px;
+}
+
+.playlist-item-card .card-cover.artist img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
 .playlist-item-card .card-title h4 {
   color: #fff;
   font-size: 0.95rem;
