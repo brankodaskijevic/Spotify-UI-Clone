@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="shortcut icon" href="assets/spotify-favicon.png" type="image/x-icon">
+</head>
+<body>
+
+  <div class="container">
+
+    <section class="sidebar left-section-container">
+      <div class="sidebar top-menu">
+        <div class="sidebar top-menu home active">
+          <i class="fas fa-house"></i>
+          <p>Home</p>
+        </div>
+
+        <div class="sidebar top-menu search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <p>Search</p>
+        </div>
+      </div>
+
+      <div class="sidebar library">
+        <div class="library-filter">
+          <div class="add-expand-row">
+            <div class="left">
+              <i class="fas fa-book"></i>
+              <p>Your Library</p>
+            </div>
+            <div>
+              <button><i class="fas fa-plus"></i></button>
+              <button><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="library-categories">
+            <div>Playlists</div>
+            <div>Podcasts & Shows</div>
+            <div>Albums</div>
+            <div>Artists</div>
+            <div>Singles</div>
+            <div>New releases</div>
+          </div>
+        </div>
+
+        <div class="sidebar library-list">
+          <div class="sidebar library-list searcbox">
+            <div>
+              <i class="fas fa-magnifying-glass"></i>
+            </div>
+            <div>
+              <i class="fas fa-list"></i>
+            </div>
+          </div>
+
+          <div class="sidebar library-list playlists">
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover album">
+                <img src="/assets/sidebar-album-images/the-social-network.jpg" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>The Social Network</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Album &#x2022; Trent Reznor and Atticus Ross</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover album">
+                <img src="/assets/sidebar-album-images/the-dark-knight.jpeg" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>The Dark Knight</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Album &#x2022; Hans Zimmer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover album">
+                <img src="/assets/sidebar-album-images/succesion.jpeg" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>Succession: Season 1</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Album &#x2022; Nicholas Briteli</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover artist">
+                <img src="/assets/sidebar-artist-images/hans-zimmer.jpeg" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>Hans Zimmer</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Artist</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover album">
+                <img src="/assets/sidebar-album-images/dune.jpeg" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>Dune</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Album &#x2022; Hand Zimmer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover album">
+                <img src="/assets/sidebar-album-images/joker.jpeg" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>Joker</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Album &#x2022; Hildur Guðnadóttir</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover artist">
+                <img src="/assets/sidebar-artist-images/hildur-guonadottir.jpeg" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>Hildur Guðnadóttir</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Artist</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover album">
+                <img src="/assets/sidebar-album-images/spider-man.jpeg" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>Spider-Man: Accross the Spider-Verse</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Album &#x2022; Daniel Pemberton</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover artist">
+                <img src="/assets/sidebar-artist-images/daniel-pemberton.jpeg" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>Daniel Pemberton</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Artist</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover album">
+                <img src="/assets/sidebar-album-images/infinity-war.jpeg" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>Avengers: Infinity War</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Album &#x2022; Alan Silvestri</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover album">
+                <img src="/assets/sidebar-album-images/soul.jpeg" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>Soul</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Album &#x2022; Various Artists</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover album">
+                <img src="/assets/sidebar-album-images/oppenheimer.png" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>Oppenheimer</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Album &#x2022; Ludwig Görranson</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover artist">
+                <img src="/assets/sidebar-artist-images/ludwig-goransson.jpeg" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>Ludwig Görranson</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Artist</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover album">
+                <img src="/assets/sidebar-album-images/inception.jpeg" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>Inception</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Album &#x2022; Hand Zimmer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover album">
+                <img src="/assets/sidebar-album-images/star-wars.webp" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>Star Wars: A New Hope</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Album &#x2022; John Williams</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover artist">
+                <img src="/assets/sidebar-artist-images/john-williams.jpeg" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>John Williams</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Artist</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover album">
+                <img src="/assets/sidebar-album-images/interstellar.jpeg" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>Interstellar</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Album &#x2022; Hand Zimmer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover album">
+                <img src="/assets/sidebar-album-images/mission-impossible.jpeg" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>Mission: Impossible - Dead Reckoning Part 1</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Album &#x2022; Lorne Balfe</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover album">
+                <img src="/assets/sidebar-album-images/tenet.jpeg" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>Tenet</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Album &#x2022; Ludwig Görranson</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover album">
+                <img src="/assets/sidebar-album-images/the-batman.png" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>The Batman</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Album &#x2022; Michael Giacchino</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover artist">
+                <img src="/assets/sidebar-artist-images/max-richter.jpeg" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>Max Richter</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Artist</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover album">
+                <img src="/assets/sidebar-album-images/westworld.jpeg" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>Westworld: Season 3</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Album &#x2022; Ramin Djawadi</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar playlists playlist-item">
+              <div class="playlist-cover album">
+                <img src="/assets/sidebar-album-images/westworl1.webp" alt="">
+              </div>
+              <div class="playlist-info">
+                <div class="playlist-title">
+                  <h3>Westworld: Season 1</h3>
+                </div>
+                <div class="playlist-artist">
+                  <p>Album &#x2022; Ramin Djawadi</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="resizer"></div>
+
+    <section class="main right-section-container">
+      <div class="main header-container">
+        <div class="top-menu">
+          <div class="left-top-menu">
+            <div class="top-menu-icon">
+              <i class="fas fa-angle-left"></i>
+            </div>
+            <div class="top-menu-icon">
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="right-top-menu">
+            <div class="top-menu-icon">
+              <i class="fas fa-bell"></i>
+            </div>
+            <div class="top-menu-icon">
+              <i class="fas fa-people-group"></i>
+            </div>
+            <div class="top-menu-icon">
+              <i class="fas fa-user"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="main header-title">
+          <h1>Good morning</h1>
+        </div>
+
+        <div class="main container-items">
+          <div class="main container-item">
+            <div class="container-item-image">
+              <img src="/assets/sidebar-album-images/oppenheimer.png" alt="oppenheimer">
+            </div>
+            <div class="container-title-button">
+              <div class="container-item-title">
+                <h3>Oppenheimer</h3>
+              </div>
+              <div class="container-item-button">
+                <button>
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="main container-item">
+            <div class="container-item-image">
+              <img src="/assets/sidebar-album-images/mission-impossible.jpeg" alt="mission-impossible">
+            </div>
+            <div class="container-title-button">
+              <div class="container-item-title">
+                <h3>Mission: Impossible - Dead Reckoning Part 1</h3>
+              </div>
+              <div class="container-item-button">
+                <button>
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="main container-item">
+            <div class="container-item-image">
+              <img src="/assets/sidebar-album-images/tenet.jpeg" alt="tenet">
+            </div>
+            <div class="container-title-button">
+              <div class="container-item-title">
+                <h3>Tenet</h3>
+              </div>
+              <div class="container-item-button">
+                <button>
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="main container-item">
+            <div class="container-item-image">
+              <img src="/assets/sidebar-album-images/the-dark-knight.jpeg" alt="the-dark-knight">
+            </div>
+            <div class="container-title-button">
+              <div class="container-item-title">
+                <h3>The Dark Knight</h3>
+              </div>
+              <div class="container-item-button">
+                <button>
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="main container-item">
+            <div class="container-item-image">
+              <img src="/assets/sidebar-album-images/the-social-network.jpg" alt="the-social-network">
+            </div>
+            <div class="container-title-button">
+              <div class="container-item-title">
+                <h3>The Social Network</h3>
+              </div>
+              <div class="container-item-button">
+                <button>
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="main container-item">
+            <div class="container-item-image">
+              <img src="/assets/sidebar-album-images/spider-man.jpeg" alt="spider-man">
+            </div>
+            <div class="container-title-button">
+              <div class="container-item-title">
+                <h3>Spider-Man: Accross the Spider-Verse</h3>
+              </div>
+              <div class="container-item-button">
+                <button>
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main playlists-container">
+
+        <div class="playlist-category">
+          <div class="title">
+            <h2>Made For Branko</h2>
+          </div>
+          <div class="playlist-items">
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/sidebar-album-images/spider-man.jpeg" alt="spider-man">
+              </div>
+              <div class="card-title">
+                <h4>Spider-Man: Accross the Spider-Verse</h4>
+              </div>
+              <div class="card-description">
+                <p>Daniel Pemberton</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/sidebar-album-images/oppenheimer.png" alt="spider-man">
+              </div>
+              <div class="card-title">
+                <h4>Oppenheimer</h4>
+              </div>
+              <div class="card-description">
+                <p>Ludwig Görranson</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/sidebar-album-images/tenet.jpeg" alt="spider-man">
+              </div>
+              <div class="card-title">
+                <h4>Tenet</h4>
+              </div>
+              <div class="card-description">
+                <p>Ludwig Görranson</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/sidebar-album-images/the-social-network.jpg" alt="spider-man">
+              </div>
+              <div class="card-title">
+                <h4>The Social Network</h4>
+              </div>
+              <div class="card-description">
+                <p>Trent Reznor and Atticus Ross</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/sidebar-album-images/the-dark-knight.jpeg" alt="spider-man">
+              </div>
+              <div class="card-title">
+                <h4>The Dark Knight</h4>
+              </div>
+              <div class="card-description">
+                <p>Hans Zimmer</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/sidebar-album-images/interstellar.jpeg" alt="spider-man">
+              </div>
+              <div class="card-title">
+                <h4>Interstellar</h4>
+              </div>
+              <div class="card-description">
+                <p>Hans Zimmer</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/sidebar-album-images/mission-impossible.jpeg" alt="spider-man">
+              </div>
+              <div class="card-title">
+                <h4>Mission: Impossible - Dead Reckoning Part 1</h4>
+              </div>
+              <div class="card-description">
+                <p>Lorne Balfe</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/sidebar-album-images/dune.jpeg" alt="spider-man">
+              </div>
+              <div class="card-title">
+                <h4>Dune</h4>
+              </div>
+              <div class="card-description">
+                <p>Hans Zimmer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="playlist-category">
+          <div class="title">
+            <h2>Rock</h2>
+          </div>
+          <div class="playlist-items">
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/playlists/rock/pink-floyd.jpg" alt="pink-floyd">
+              </div>
+              <div class="card-title">
+                <h4>Dark Side of The Moon</h4>
+              </div>
+              <div class="card-description">
+                <p>Pink FLoyd</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/playlists/rock/nirvana.jpg" alt="nirvana">
+              </div>
+              <div class="card-title">
+                <h4>Nevermind</h4>
+              </div>
+              <div class="card-description">
+                <p>Nirvana</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/playlists/rock/beatles.jpg" alt="beatles">
+              </div>
+              <div class="card-title">
+                <h4>Sgt Pepper’s Lonely Hearts Club Band </h4>
+              </div>
+              <div class="card-description">
+                <p>The Beatles</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/playlists/rock/amy-winehouse.jpg" alt="amy-winehouse">
+              </div>
+              <div class="card-title">
+                <h4>Back to Black</h4>
+              </div>
+              <div class="card-description">
+                <p>Amy Winehouse</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/playlists/rock/david-bowie.jpg" alt="spider-man">
+              </div>
+              <div class="card-title">
+                <h4>Aladdin Sane</h4>
+              </div>
+              <div class="card-description">
+                <p>David Bowie</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/playlists/rock/green-day.jpg" alt="green-day">
+              </div>
+              <div class="card-title">
+                <h4>Dookie</h4>
+              </div>
+              <div class="card-description">
+                <p>Green Day</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/playlists/rock/the-smiths.jpeg" alt="the-smiths">
+              </div>
+              <div class="card-title">
+                <h4>Meat Is Murder</h4>
+              </div>
+              <div class="card-description">
+                <p>The Smiths</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/playlists/rock/prince.jpeg" alt="prince">
+              </div>
+              <div class="card-title">
+                <h4>Purple Rain</h4>
+              </div>
+              <div class="card-description">
+                <p>Prince</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="playlist-category">
+          <div class="title">
+            <h2>Your favorite artists</h2>
+          </div>
+          <div class="playlist-items">
+            <div class="playlist-item-card">
+              <div class="card-cover artist">
+                <img src="/assets/sidebar-artist-images/hans-zimmer.jpeg" alt="hans-zimmer">
+              </div>
+              <div class="card-title">
+                <h4>Hans Zimmer</h4>
+              </div>
+              <div class="card-description">
+                <p>Artist</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover artist">
+                <img src="/assets/sidebar-artist-images/ludwig-goransson.jpeg" alt="ludwig-goransson">
+              </div>
+              <div class="card-title artist">
+                <h4>Ludwig Görranson</h4>
+              </div>
+              <div class="card-description">
+                <p>Artist</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover artist">
+                <img src="/assets/sidebar-artist-images/daniel-pemberton.jpeg" alt="daniel-pemberton">
+              </div>
+              <div class="card-title">
+                <h4>Daniel Pemberton</h4>
+              </div>
+              <div class="card-description">
+                <p>Artist</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover artist">
+                <img src="/assets/sidebar-artist-images/hildur-guonadottir.jpeg" alt="hildur-guonadottir">
+              </div>
+              <div class="card-title">
+                <h4>Hildur Guðnadóttir</h4>
+              </div>
+              <div class="card-description">
+                <p>Artist</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover artist">
+                <img src="/assets/sidebar-artist-images/john-williams.jpeg" alt="john-williams">
+              </div>
+              <div class="card-title">
+                <h4>John Williams</h4>
+              </div>
+              <div class="card-description">
+                <p>Artist</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover artist">
+                <img src="/assets/sidebar-artist-images/max-richter.jpeg" alt="max-richter">
+              </div>
+              <div class="card-title">
+                <h4>Max Richter</h4>
+              </div>
+              <div class="card-description">
+                <p>Artist</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover artist">
+                <img src="/assets/sidebar-artist-images/indira-paganotto.jpeg" alt="indira-paganotto">
+              </div>
+              <div class="card-title">
+                <h4>Indira Paganotto</h4>
+              </div>
+              <div class="card-description">
+                <p>Artist</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover artist">
+                <img src="/assets/sidebar-artist-images/nine-inch-nails.jpeg" alt="nine-inch-nails">
+              </div>
+              <div class="card-title">
+                <h4>Nine Inch Nails</h4>
+              </div>
+              <div class="card-description">
+                <p>Artist</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="playlist-category">
+          <div class="title">
+            <h2>Recommended for you</h2>
+          </div>
+          <div class="playlist-items">
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/playlists/recommended-for-you/marvel.webp" alt="marvel">
+              </div>
+              <div class="card-title">
+                <h4>Marvel</h4>
+              </div>
+              <div class="card-description">
+                <p>Ryan Taubert</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/playlists/recommended-for-you/outer-peace.jpeg" alt="outer-peace">
+              </div>
+              <div class="card-title">
+                <h4>Outer Peace</h4>
+              </div>
+              <div class="card-description">
+                <p>Christopher Filippi</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/playlists/recommended-for-you/internal-flight.jpeg" alt="internal-flight">
+              </div>
+              <div class="card-title">
+                <h4>Internal Flight</h4>
+              </div>
+              <div class="card-description">
+                <p>Estas Tonne</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/playlists/recommended-for-you/winter-walking.jpeg" alt="winter-walking">
+              </div>
+              <div class="card-title">
+                <h4>Winter Walking</h4>
+              </div>
+              <div class="card-description">
+                <p>Ludovico Enaudini</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/playlists/recommended-for-you/meute.jpeg" alt="meute">
+              </div>
+              <div class="card-title">
+                <h4>Loss of Hope</h4>
+              </div>
+              <div class="card-description">
+                <p>MEUTE</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/playlists/recommended-for-you/starfall.jpg" alt="starfall">
+              </div>
+              <div class="card-title">
+                <h4>Starfall</h4>
+              </div>
+              <div class="card-description">
+                <p>Ryan Taubert</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/playlists/recommended-for-you/lose-yourself.jpeg" alt="lose-yourself">
+              </div>
+              <div class="card-title">
+                <h4>Lose Yourself</h4>
+              </div>
+              <div class="card-description">
+                <p>Eminem</p>
+              </div>
+            </div>
+
+            <div class="playlist-item-card">
+              <div class="card-cover">
+                <img src="/assets/playlists/recommended-for-you/backwaters.jpeg" alt="backwaters">
+              </div>
+              <div class="card-title">
+                <h4>Backwaters</h4>
+              </div>
+              <div class="card-description">
+                <p>pølaroit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <section class="player">
+    <div class="player-left-section">
+      <div class="current-play-cover">
+        <img src="assets/sidebar-album-images/oppenheimer.png" alt="oppenheimer">
+      </div>
+      <div class="current-play-info">
+        <p>Oppenheimer</p>
+        <p>Ludwig Görranson</p>
+      </div>
+      <div class="like-button-container">
+        <button><i class="fas fa-heart"></i></button>
+      </div>
+    </div>
+    <div class="player-middle-section"></div>
+    <div class="player-right-section"></div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
