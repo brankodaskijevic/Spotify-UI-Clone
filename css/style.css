@@ -547,7 +547,8 @@ body {
 .player .player-middle-section .upper-menu {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 25px;
+  align-items: center;
 }
 
 .player .player-middle-section .upper-menu i {
@@ -562,6 +563,21 @@ body {
 
 .player .player-middle-section .upper-menu i:hover {
   color: #fff;
+}
+
+.player .player-middle-section .upper-menu button {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player .player-middle-section .upper-menu button i:first-child {
+  color: var(--dark);
 }
 
 .player .player-right-section {
