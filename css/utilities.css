@@ -1,4 +1,5 @@
 :root {
+  --light: #fff;
   --dark: #000;
   --dark-primary: #121212;
   --gray-primary: #a7a7a7;
@@ -6,4 +7,9 @@
   --main-header-continer-cards: #313030;
   --green-primary: #1BD760;
   --playlist-item-card-bg: #181818;
+
+  --border-radius-S: 4px;
+  --border-radius-M: 6px;
+  --border-radius-L: 8px;
+  --border-rounded: 50%;
 }

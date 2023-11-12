@@ -27,7 +27,7 @@ body {
   height: 100%;
   background: none;
   margin: 4px 0 4px 4px;
-  border-radius: 8px;
+  border-radius: var(--border-radius-L);
   display: flex;
   flex-direction: column;
 }
@@ -35,13 +35,13 @@ body {
 .sidebar .top-menu {
   width: 100%;
   background: var(--dark-primary);
-  border-radius: 8px;
+  border-radius: var(--border-radius-L);
   color: var(--gray-primary);
   margin-bottom: 8px;
 }
 
 .sidebar .top-menu .home.active {
-  color: #fff;
+  color: var(--light);
 }
 
 .sidebar .top-menu .home,
@@ -59,7 +59,7 @@ body {
 
 .sidebar .top-menu .home:hover,
 .sidebar .top-menu .search:hover {
-  color: #fff;
+  color: var(--light);
 }
 
 .sidebar .top-menu .home i,
@@ -79,7 +79,7 @@ body {
   width: 100%;
   height: 100%;
   background: var(--dark-primary);
-  border-radius: 8px;
+  border-radius: var(--border-radius-L);
   color: var(--gray-primary);
   display: flex;
   flex-direction: column;
@@ -106,7 +106,7 @@ body {
 }
 
 .sidebar .add-expand-row .left:hover {
-  color: #fff;
+  color: var(--light);
   transition: 0.5s;
   cursor: pointer;
 }
@@ -128,9 +128,9 @@ body {
 }
 
 .sidebar .add-expand-row button:hover {
-  color: white;
+  color: var(--light);
   background: rgba(167, 167, 167, 0.1);
-  border-radius: 50%;
+  border-radius: var(--border-rounded);
   transition: 0.5s;
 }
 
@@ -178,9 +178,9 @@ body {
 }
 
 .sidebar .library-list .searcbox > div i:hover {
-  color: white;
+  color: var(--light);
   background: rgba(167, 167, 167, 0.1);
-  border-radius: 50%;
+  border-radius: var(--border-rounded);
   transition: 0.5s;
 }
 
@@ -200,7 +200,7 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 8px 8px;
-  border-radius: 6px;
+  border-radius: var(--border-radius-M);
   cursor: pointer;
 }
 
@@ -213,16 +213,18 @@ body {
   height: 55px;
 }
 
-.sidebar .playlist-item .playlist-cover.album img {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-}
-
+.sidebar .playlist-item .playlist-cover.album img,
 .sidebar .playlist-item .playlist-cover.artist img {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+}
+
+.sidebar .playlist-item .playlist-cover.album img {
+  border-radius: var(--border-radius-L);
+}
+
+.sidebar .playlist-item .playlist-cover.artist img {
+  border-radius: var(--border-rounded);
 }
 
 .sidebar .playlist-item .playlist-info {
@@ -232,7 +234,7 @@ body {
 .sidebar .playlist-item .playlist-title h3 {
  font-size: 0.95rem;
  font-weight: 400;
- color: #fff;
+ color: var(--light);
 }
 
 .sidebar .playlist-item .playlist-artist p {
@@ -249,7 +251,7 @@ body {
   height: 100%;
   background: var(--dark-primary);
   margin: 4px;
-  border-radius: 8px;
+  border-radius: var(--border-radius-L);
   flex-basis: 0;
   flex-grow: 1;
   overflow: scroll;
@@ -278,12 +280,12 @@ body {
   color: var(--gray-primary);
   background: rgba(0, 0, 0, 0.5);
   padding: 8px 10px;
-  border-radius: 50%;
+  border-radius: var(--border-rounded);
   cursor: pointer;
 }
 
 .main .header-container .top-menu .top-menu-icon i:hover {
-  color: #fff;
+  color: var(--light);
   scale: 1.1;
 }
 
@@ -292,7 +294,7 @@ body {
 }
 
 .main .header-title h1 {
-  color: #fff;
+  color: var(--light);
   font-size: 2rem;
   font-weight: 600;
   margin: 22px 0;
@@ -309,7 +311,7 @@ body {
 .main .container-item {
   text-align: center;
   background: rgba(167, 167, 167, 0.2);
-  border-radius: 4px;
+  border-radius: var(--border-radius-S);
   display: flex;
   cursor: pointer;
 }
@@ -347,7 +349,7 @@ body {
 
 .container-item-title h3 {
   margin-left: 15px;
-  color: white;
+  color: var(--light);
   font-size: 1rem;
   font-weight: 600;
   overflow: hidden;
@@ -364,7 +366,7 @@ body {
   height: 50px;
   background: var(--green-primary);
   border: none;
-  border-radius: 50%;
+  border-radius: var(--border-rounded);
   margin: 0 15px;
   box-shadow:
     inset 0 1px 1px rgba(255,255,255,0.13),
@@ -393,7 +395,7 @@ body {
 }
 
 .playlist-category .title h2 {
-  color: #fff;
+  color: var(--light);
   font-size: 1.4rem;
   font-weight: 550;
   margin-bottom: 18px;
@@ -414,35 +416,29 @@ body {
   width: 192px;
   background: var(--playlist-item-card-bg);
   padding: 16px;
-  border-radius: 8px;
+  border-radius: var(--border-radius-L);
   display: flex;
   flex-direction: column;
 }
 
-.playlist-item-card .card-cover {
+.playlist-item-card .card-cover,
+.playlist-item-card .card-cover img,
+.playlist-item-card .card-cover .artist,
+.playlist-item-card .card-cover.artist img {
   width: 160px;
   height: 160px;
 }
 
 .playlist-item-card .card-cover img {
-  width: 160px;
-  height: 160px;
-  border-radius: 8px;
-}
-
-.playlist-item-card .card-cover .artist {
-  width: 160px;
-  height: 160px;
+  border-radius: var(--border-radius-L);
 }
 
 .playlist-item-card .card-cover.artist img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
+  border-radius: var(--border-rounded);
 }
 
 .playlist-item-card .card-title h4 {
-  color: #fff;
+  color: var(--light);
   font-size: 0.95rem;
   font-weight: 600;
   margin-top: 14px;
@@ -483,7 +479,7 @@ body {
   height: 7vh;
   background: var(--dark);
   margin-top: 4px;
-  color: white;
+  color: var(--light);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -496,16 +492,18 @@ body {
   align-items: center;
 }
 
-.player .player-left-section .current-play-cover {
+.player .player-left-section .current-play-cover,
+.player .player-left-section .current-play-cover img {
   width: 55px;
   height: 55px;
+}
+
+.player .player-left-section .current-play-cover {
   margin-right: 18px;
 }
 
 .player .player-left-section .current-play-cover img {
-  width: 55px;
-  height: 55px;
-  border-radius: 8px;
+  border-radius: var(--border-radius-L);
 }
 
 .player .player-left-section .current-play-info {
@@ -513,12 +511,12 @@ body {
 }
 
 .player .player-left-section .current-play-info p:first-child {
-  color: #fff;
+  color: var(--light);
   font-size: 0.85rem;
 }
 
 .player .player-left-section .current-play-info p:last-child {
-  color: #fff;
+  color: var(--light);
   font-size: 0.7rem;
   color: var(--gray-primary);
 }
@@ -565,15 +563,15 @@ body {
 }
 
 .player .player-middle-section .upper-menu i:hover {
-  color: #fff;
+  color: var(--light);
 }
 
 .player .player-middle-section .upper-menu button {
   width: 35px;
   height: 35px;
-  background: #fff;
+  background: var(--light);
   border: none;
-  border-radius: 50%;
+  border-radius: var(--border-rounded);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -606,15 +604,15 @@ body {
   width: 600px;
   height: 4px;
   background: #686868;
-  border-radius: 8px;
+  border-radius: var(--border-radius-L);
   margin: 0 6px;
 }
 
 .player .playbar .progress-bar {
   width: 93%;
   height: 4px;
-  background: #fff;
-  border-radius: 8px;
+  background: var(--light);
+  border-radius: var(--border-radius-L);
   cursor: pointer;
 }
 
@@ -632,7 +630,7 @@ body {
 }
 
 .player .player-right-section i:hover {
-  color: #fff;
+  color: var(--light);
 }
 
 .player .player-right-section .volume-section {
@@ -645,15 +643,15 @@ body {
   width: 80px;
   height: 4px;
   background: #686868;
-  border-radius: 8px;
+  border-radius: var(--border-radius-L);
   margin: 0 0 0 6px;
 }
 
 .player .player-right-section .current-volume {
   width: 60%;
   height: 4px;
-  background: #fff;
-  border-radius: 8px;
+  background: var(--light);
+  border-radius: var(--border-radius-L);
   cursor: pointer;
 }
 
