@@ -661,3 +661,9 @@ body {
 .player .player-right-section .current-volume:hover {
   background: var(--green-primary);
 }
+
+@media (max-width: 1100px) {
+  .player .playbar .progress {
+    width: 300px;
+  }
+}
