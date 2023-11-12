@@ -605,7 +605,7 @@ body {
 .player .playbar .progress {
   width: 600px;
   height: 4px;
-  background: rgb(104, 104, 104);
+  background: #686868;
   border-radius: 8px;
   margin: 0 6px;
 }
@@ -615,8 +615,49 @@ body {
   height: 4px;
   background: #fff;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .player .player-right-section {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
 
+.player .player-right-section i {
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: var(--gray-primary);
+}
+
+.player .player-right-section i:hover {
+  color: #fff;
+}
+
+.player .player-right-section .volume-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.player .player-right-section .volume-bar {
+  width: 80px;
+  height: 4px;
+  background: #686868;
+  border-radius: 8px;
+  margin: 0 0 0 6px;
+}
+
+.player .player-right-section .current-volume {
+  width: 60%;
+  height: 4px;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.player .playbar .progress-bar:hover,
+.player .player-right-section .current-volume:hover {
+  background: var(--green-primary);
 }
