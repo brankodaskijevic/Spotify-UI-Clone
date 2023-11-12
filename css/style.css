@@ -231,13 +231,13 @@ body {
 
 .sidebar .playlist-item .playlist-title h3 {
  font-size: 0.95rem;
- font-weight: 200;
+ font-weight: 400;
  color: #fff;
 }
 
 .sidebar .playlist-item .playlist-artist p {
   font-size: 0.8rem;
-  font-weight: 200;
+  font-weight: 400;
   color: var(--gray-primary);
  }
 
