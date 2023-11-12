@@ -541,7 +541,10 @@ body {
 }
 
 .player .player-middle-section {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .player .player-middle-section .upper-menu {
@@ -574,10 +577,44 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.player .player-middle-section .upper-menu button:hover {
+  scale: 1.05;
 }
 
 .player .player-middle-section .upper-menu button i:first-child {
   color: var(--dark);
+}
+
+.player .playbar {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.player .playbar .time-left,
+.player .playbar .total-time {
+  font-size: 0.65rem;
+  font-weight: 300;
+  color: var(--gray-primary);
+}
+
+.player .playbar .progress {
+  width: 600px;
+  height: 4px;
+  background: rgb(104, 104, 104);
+  border-radius: 8px;
+  margin: 0 6px;
+}
+
+.player .playbar .progress-bar {
+  width: 93%;
+  height: 4px;
+  background: #fff;
+  border-radius: 8px;
 }
 
 .player .player-right-section {
