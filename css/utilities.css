@@ -12,4 +12,13 @@
   --border-radius-M: 6px;
   --border-radius-L: 8px;
   --border-rounded: 50%;
+
+  --text-XS: 0.7rem;
+  --text-S: 0.85rem;
+  --text-M: 0.95rem;
+  --text-ML: 1rem;
+  --text-L: 1.2rem;
+  --text-XL: 1.4rem;
+  --text-XXL: 1.5rem;
+  --text-2XL: 2rem;
 }

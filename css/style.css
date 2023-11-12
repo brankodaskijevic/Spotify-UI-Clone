@@ -64,13 +64,13 @@ body {
 
 .sidebar .top-menu .home i,
 .sidebar .top-menu .search i {
-  font-size: 1.5rem;
+  font-size: var(--text-XXL);
 }
 
 
 .sidebar .top-menu .home p,
 .sidebar .top-menu .search p {
-  font-size: 0.95rem;
+  font-size: var(--text-M);
   font-weight: 600;
   margin: 0 0 0 20px;
 }
@@ -94,7 +94,7 @@ body {
 .sidebar .add-expand-row {
   display: flex;
   justify-content: space-between;
-  font-size: 0.95rem;
+  font-size: var(--text-M);
   font-weight: 600;
   align-items: center;
   margin: 8px 8px 8px 8px;
@@ -114,7 +114,7 @@ body {
 .sidebar .add-expand-row .left i {
   padding: 10px;
   background: none;
-  font-size: 1.5rem;
+  font-size: var(--text-XXL);
   margin-right: 8px;
 }
 
@@ -122,7 +122,7 @@ body {
   background: none;
   color: var(--gray-primary);
   border: none;
-  font-size: 1.2rem;
+  font-size: var(--text-L);
   cursor: pointer;
   margin: 10px;
 }
@@ -145,7 +145,7 @@ body {
 }
 
 .sidebar .library-categories div {
-  font-size: 0.8rem;
+  font-size: var(--text-S);
   color: #d1d1d1;
   background: var(--badge-background);
   padding: 10px;
@@ -232,13 +232,13 @@ body {
  }
 
 .sidebar .playlist-item .playlist-title h3 {
- font-size: 0.95rem;
+ font-size: var(--text-M);
  font-weight: 400;
  color: var(--light);
 }
 
 .sidebar .playlist-item .playlist-artist p {
-  font-size: 0.8rem;
+  font-size: var(--text-S);
   font-weight: 400;
   color: var(--gray-primary);
  }
@@ -276,7 +276,7 @@ body {
 }
 
 .main .header-container .top-menu .top-menu-icon i {
-  font-size: 1.2rem;
+  font-size: var(--text-L);
   color: var(--gray-primary);
   background: rgba(0, 0, 0, 0.5);
   padding: 8px 10px;
@@ -295,7 +295,7 @@ body {
 
 .main .header-title h1 {
   color: var(--light);
-  font-size: 2rem;
+  font-size: var(--text-2XL);
   font-weight: 600;
   margin: 22px 0;
 }
@@ -350,7 +350,7 @@ body {
 .container-item-title h3 {
   margin-left: 15px;
   color: var(--light);
-  font-size: 1rem;
+  font-size: var(--text-ML);
   font-weight: 600;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -381,7 +381,7 @@ body {
 }
 
 .main .container-item-button button i {
-  font-size: 1.4rem;
+  font-size: var(--text-XL);
 }
 
 .main.playlists-container {
@@ -396,7 +396,7 @@ body {
 
 .playlist-category .title h2 {
   color: var(--light);
-  font-size: 1.4rem;
+  font-size: var(--text-XL);
   font-weight: 550;
   margin-bottom: 18px;
 }
@@ -439,7 +439,7 @@ body {
 
 .playlist-item-card .card-title h4 {
   color: var(--light);
-  font-size: 0.95rem;
+  font-size: var(--text-M);
   font-weight: 600;
   margin-top: 14px;
   overflow: hidden;
@@ -449,7 +449,7 @@ body {
 
 .playlist-item-card .card-description p {
   color: var(--gray-primary);
-  font-size: 0.85rem;
+  font-size: var(--text-S);
   margin-top: 8px;
   overflow: hidden;
 
@@ -512,12 +512,12 @@ body {
 
 .player .player-left-section .current-play-info p:first-child {
   color: var(--light);
-  font-size: 0.85rem;
+  font-size: var(--text-S);
 }
 
 .player .player-left-section .current-play-info p:last-child {
   color: var(--light);
-  font-size: 0.7rem;
+  font-size: var(--text-XS);
   color: var(--gray-primary);
 }
 
@@ -528,7 +528,7 @@ body {
 
 .player .like-button-container button i {
   background-color: var(--gray-primary);
-  font-size: 1rem;
+  font-size: var(--text-ML);
   border-radius: 20px;
   padding: 4px;
   cursor: pointer;
@@ -554,7 +554,7 @@ body {
 
 .player .player-middle-section .upper-menu i {
   color: var(--gray-primary);
-  font-size: 1.2rem;
+  font-size: var(--text-L);
   cursor: pointer;
 }
 
@@ -595,7 +595,7 @@ body {
 
 .player .playbar .time-left,
 .player .playbar .total-time {
-  font-size: 0.65rem;
+  font-size: var(--text-XS);
   font-weight: 300;
   color: var(--gray-primary);
 }
@@ -624,7 +624,7 @@ body {
 }
 
 .player .player-right-section i {
-  font-size: 0.9rem;
+  font-size: var(--text-S);
   cursor: pointer;
   color: var(--gray-primary);
 }
